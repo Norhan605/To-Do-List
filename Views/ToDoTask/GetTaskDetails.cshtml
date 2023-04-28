@@ -1,0 +1,62 @@
+﻿
+@model List<ToDoTask>
+
+@{
+    var task = ViewBag.TaskDetails;
+}
+
+@*<div class="container my-3">
+    <div class="row">
+    <div class="col">
+        <h4>Task Id</h4>
+<h4 >@task.Id</h4>
+        </div>
+        <div class="col">
+            <h4>Task Name</h4>
+<h4>@task.Name</h4>
+</div>
+        <div class="col">
+            <h4>Task Description</h4>
+<h4>@task.Description</h4>
+</div>
+        <div class="col">
+            <h4>Task Status</h4>
+<h4>@task.Status</h4>
+</div>
+        <div class="col">
+<h4>@task.User.Name</h4>
+</div>
+        <div class="col">
+<h4>@task.Category.Name</h4>
+</div>
+</div>
+</div>*@
+
+
+<div class="container my-2">
+    <h3>Task Details</h3>
+    <table class="table ">
+        <thead>
+            <tr>
+                <th scope="col">Task Id</th>
+                <th>Task Name</th>
+                <th>Task Description</th>
+                <th>Task Status</th>
+                <th>User Name</th>
+                <th>Category Name</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+
+                <td>@task.Id Id</td>
+                <td>@task.Name</td>
+                <td>@task.Description</td>
+                <td>@task.Status</td>
+                <td>@task.User.Name</td>
+                <td>@task.Category.Name</td>
+            </tr>
+</tbody>
+</table>
+</div>
